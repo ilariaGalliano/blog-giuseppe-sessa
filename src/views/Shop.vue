@@ -35,7 +35,7 @@
             <img class="card-img-top" src="../assets/live2.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Spartito</h5>
-                <p class="card-text">Download my Spartito</p>
+                <p class="card-text">Stand by Me Spartito</p>
                 <download-pdf-button :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" /> 
               </div>
             </div>
@@ -45,8 +45,8 @@
             <img class="card-img-top" src="../assets/live2.jpg" alt="Card image cap">
               <div class="card-body">
                  <h5 class="card-title">Spartito</h5>
-                <p class="card-text">Download my Spartito</p>
-                <download-pdf-button :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" /> 
+                <p class="card-text">How I Met Your Mother Spartito</p>
+                <download-pdf-button :pdf-url="pdfUrl2" :pdf-file-name="pdfFileName2" /> 
               </div>
             </div>
           </div>
@@ -88,8 +88,10 @@ export default {
   data() {
     return {
       isModalOpen: this.visible,
-      pdfUrl: "/files/ricevuta_terzoAcconto.pdf",
-      pdfFileName: "ricevuta_terzoAcconto.pdf",
+      pdfUrl: "/files/spartito1.pdf",
+      pdfFileName: "spartito1.pdf",
+      pdfUrl2: "/files/spartito2.pdf",
+      pdfFileNam2: "spartito2.pdf",
     };
   },
   methods: {
@@ -135,6 +137,7 @@ export default {
   transition: all 150ms ease-in-out;
   transform: scale(1);
   opacity: 1;
+  cursor: pointer;
 }
 
 .card-info {
@@ -166,7 +169,20 @@ export default {
     margin-bottom: 15px;
   }
   .card-info {
+    width: 300px;
+    height: auto;
+    border: 2px solid grey;
+    border-radius: 40px;
+    padding: 10px;
     margin-top: 20px;
+    margin-left: 7px;
+  }
+  .card-body:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    transition: all 150ms ease-in-out;
+    transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
   }
 }
 </style>

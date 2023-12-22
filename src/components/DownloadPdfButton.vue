@@ -16,6 +16,14 @@ export default {
       type: String,
       required: true,
     },
+    pdfUrl2: {
+      type: String,
+      required: true,
+    },
+    pdfFileName2: {
+      type: String,
+      required: true,
+    },
   },
   methods: {
     downloadPdf() {

@@ -5,6 +5,8 @@ export default {
         welcomeMsg: "Benvenuti",
         album: "Ascolta il mio nuovo CD",
         mainPage: "Pagina principale",
+        my: "La mia",
+        story: "STORIA",
         contacts: "Contatti",
         bio: "Giuseppe inizia la sua carriera da chitarrista alla giovane età di 7 anni, intraprendendo successivamente il percorso delle tecniche fingerstyle con il Maestro Pierangelo Mugavero. All’età di 18 anni pubblica la sua prima composizione dal titolo “End of the day”, con la quale dopo un anno partecipa al Concorso Nuove Composizioni 2019 del Centro Studi fingerstyle di Arezzo, dove si classifica al 2° posto.",
         bioSecondPart:

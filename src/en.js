@@ -4,6 +4,8 @@ export default {
     return {
       en: {
         welcomeMsg: "Welcome here",
+        my: "My",
+        story: "Story.",
         album: "Listen to my new CD",
         mainPage: "Main page",
         contacts: "Contacts",
