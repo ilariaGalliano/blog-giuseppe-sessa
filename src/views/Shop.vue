@@ -133,11 +133,12 @@ export default {
 }
 
 .card-body:hover {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   transition: all 150ms ease-in-out;
   transform: scale(1);
   opacity: 1;
   cursor: pointer;
+  border-radius: 0.25%;
 }
 
 .card-info {
@@ -183,6 +184,7 @@ export default {
     transform: scale(1);
     opacity: 1;
     cursor: pointer;
+    border-radius: 40px;
   }
 }
 </style>

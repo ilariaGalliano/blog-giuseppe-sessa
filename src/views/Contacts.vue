@@ -1,65 +1,61 @@
 <template>
-  <!-- CREARE FORM CHE MANDA MAIL DIRETTAMENTE -->
-  <div class="blue-box"></div>
-  <div class="jumbotron mt-5">
-    <h1>Contatti</h1>
-    <div>
-      <span>Info</span>
-      <p>
-        <font-awesome-icon class="pr-3" icon="fa-video" />
-        <a href="mailto:giuseppesessa54@gmail.com">giuseppesessa54@gmail.com</a>
-      </p>
-    </div>
-    <div>
-      <p>
-        <font-awesome-icon class="pr-3" icon="fa-phone" />
-        <span>+39 3545447898</span>
-      </p>
-    </div>
-  </div>
-
-  <div class="container">
-    <h1>Contact</h1>
-    <form
-      target="_blank"
-      action="https://formsubmit.co/ilaria.galliano7@gmail.com"
-      method="POST"
-    >
-      <div class="form-group">
-        <div class="form-row">
-          <div class="col-4">
-            <input
-              type="text"
-              name="name"
-              class="form-control"
-              placeholder="Full Name"
-              required
-            />
-          </div>
-          <div class="col-4">
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              placeholder="Email Address"
-              required
-            />
+  <div class="container mt-5">
+    <h1 class="mb-5">Contatti</h1>
+    <div class="display-flex">
+      <div class="mr text-left">
+        <span>Info</span>
+        <p class="mt-2">
+          <font-awesome-icon class="pr-3" icon="fa-video" />
+          <a href="mailto:giuseppesessa54@gmail.com"
+            >giuseppesessa54@gmail.com</a
+          >
+        </p>
+        <p>
+          <font-awesome-icon class="pr-3" icon="fa-phone" />
+          <span>+39 3545447898</span>
+        </p>
+      </div>
+      <form
+        target="_blank"
+        action="https://formsubmit.co/ilaria.galliano7@gmail.com"
+        method="POST"
+      >
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col-4">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="form-group">
-        <textarea
-          placeholder="Your Message"
-          class="form-control"
-          name="message"
-          rows="10"
-          required
-        ></textarea>
-      </div>
-      <button type="submit" class="btn btn-lg btn-dark btn-block">
-        Submit Form
-      </button>
-    </form>
+        <div class="form-group">
+          <textarea
+            placeholder="Your Message"
+            class="form-control"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">
+          Mail
+        </button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -79,6 +75,31 @@ export default {
   height: 200px;
   background: #9eaee2;
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .display-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mr {
+    margin-right: 50px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .display-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mr {
+    margin-right: 50px;
+  }
+}
+
 /* 
 .jumbotron {
   background: #f19998;
@@ -92,6 +113,12 @@ h1 {
 li {
   list-style: none;
   padding: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 8% 5% 0 4%;
 }
 
 /*TEST/ */

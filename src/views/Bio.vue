@@ -2,9 +2,9 @@
   <div class="panel">
     <div class="container">
       <select name="lang" v-model="lang">
-          <option value="en">🇬🇧</option>
-          <option value="it">🇮🇹</option>
-        </select>
+        <option value="en">🇬🇧</option>
+        <option value="it">🇮🇹</option>
+      </select>
       <!-- <p class="music_video fade-in intro">Giuseppe</p> -->
       <h2 class="music_video fade-in title-big">
         {{ translate("my") }} <br />

@@ -1,21 +1,7 @@
-
- <template>
-  <!-- <div class="section music_video">
-    <h1 class="title">Vieni a sentirmi live</h1>
-  </div>
-  <div class="section music_video">
-    <h1 class="title">Cerca la città più vicina a te</h1>
-  </div>
-  <div class="section music_video">
-    <h1 class="title">A presto</h1>
-  </div> 
-
-  <video class="video-bg" src="../assets/video.mp4" autoplay muted loop></video> -->
-  <!-- IN ATTESA DELLE DATE DEI LIVE -->
-
+<template>
   <div class="panel">
     <div class="container">
-      <p class="music_video fade-in intro">Ecco</p>
+      <p class="music_video fade-in intro">Live</p>
       <h2 class="music_video fade-in title-big">
         Le nuove <br />
         date.
@@ -30,16 +16,13 @@
 
   <div class="panel">
     <div class="container">
-      <h2 class="music_video fade-in title-med">
+      <h2 class="music_video fade-in title-med mb-2">
         Gli eventi <br />
         disponibili
       </h2>
-      <p class="music_video fade-in subtitle">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, adipisci
-        provident beatae consequatur laboriosam, illo earum nostrum quas ab
-        commodi repellendus quibusdam modi molestiae fuga veniam neque
-        asperiores accusamus pariatur?
-      </p>
+      <p class="music_video fade-in subtitle">Napoli</p>
+      <p class="music_video fade-in subtitle">Roma</p>
+      <p class="music_video fade-in subtitle">Milano</p>
       <img
         src="../assets/2389landi-gio.jpg"
         alt="concert-pic"
@@ -50,11 +33,9 @@
 
   <div class="panel">
     <div class="container">
+      <p class="music_video fade-in orange-text">Ti aspetto live</p>
       <p class="music_video fade-in orange-text">
-        Ecco le foto dei live
-      </p>
-      <p class="music_video fade-in orange-text">
-        lo show indimenticabile
+        per uno show indimenticabile
       </p>
       <img
         src="../assets/7-2386landi-gio.jpg"
@@ -82,18 +63,6 @@ body {
   font-size: 16px;
   box-sizing: border-box;
   background: #000;
-}
-
-/* Video  */
-.video-bg {
-  width: 100%;
-  max-height: 600px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  opacity: 0, 6;
-  z-index: 0;
 }
 
 /* Sections styles  */
@@ -143,8 +112,7 @@ body {
   /* border: 1px solid red; */
   width: 100%;
   max-width: 900px;
-  height: 100vh;
-  padding: 10% 5% 0 4%;
+  padding: 7% 5% 0 4%;
 }
 
 .intro {
@@ -180,7 +148,7 @@ body {
 .subtitle {
   font-size: 1.5rem;
   color: #666;
-  max-width: 500px;
+  /* max-width: 500px; */
   padding-bottom: 10px;
 }
 
