@@ -10,7 +10,7 @@
             >giuseppesessa54@gmail.com</a
           >
         </p>
-        <p>
+        <p class="mb-mobile">
           <font-awesome-icon class="pr-3" icon="fa-phone" />
           <span>+39 3545447898</span>
         </p>
@@ -27,7 +27,7 @@
                 type="text"
                 name="name"
                 class="form-control"
-                placeholder="Name"
+                placeholder="Your Name"
                 required
               />
             </div>
@@ -36,7 +36,7 @@
                 type="email"
                 name="email"
                 class="form-control"
-                placeholder="Email"
+                placeholder="Your Email"
                 required
               />
             </div>
@@ -76,6 +76,10 @@ export default {
   background: #9eaee2;
 }
 
+.mb-mobile {
+  margin-bottom: 26px;
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .display-flex {
@@ -106,7 +110,6 @@ export default {
 } */
 
 h1 {
-  /* font-family: "Lucida Console", Monaco, monospace; */
   font-weight: bold;
 }
 

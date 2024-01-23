@@ -7,12 +7,10 @@
     </button>
     <ul v-if="isOpen" class="menu-items">
       <li><router-link to="/" @click="toggleMenu">Home</router-link></li>
-      <li><router-link to="/bio" @click="toggleMenu">Bio</router-link></li>
+      <li><router-link to="/bio" @click="toggleMenu">About</router-link></li>
       <li><router-link to="/shop" @click="toggleMenu">Shop</router-link></li>
       <li>
-        <router-link to="/live" @click="toggleMenu"
-          >Live</router-link
-        >
+        <router-link to="/live" @click="toggleMenu">Concert Dates</router-link>
       </li>
       <li>
         <router-link to="/contacts" @click="toggleMenu">Contacts</router-link>

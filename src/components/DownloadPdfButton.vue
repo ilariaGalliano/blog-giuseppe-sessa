@@ -32,8 +32,7 @@ export default {
       link.href = this.pdfUrl;
       link.target = "_blank";
       link.download = this.pdfFileName;
-      console.log("path", this.href);
-      console.log("file", this.download);
+      console.log("pdfFileName", this.pdfFileName);
 
       // Simulate a click on the element <a>
       document.body.appendChild(link);

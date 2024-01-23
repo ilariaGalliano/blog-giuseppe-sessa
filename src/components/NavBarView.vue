@@ -1,9 +1,9 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/bio">Bio</router-link> |
+    <router-link to="/bio">About</router-link> |
     <router-link to="/shop">Shop</router-link> |
-    <router-link to="/live">Live</router-link> |
+    <router-link to="/live">Concert Dates</router-link> |
     <router-link to="/contacts">{{ translate("contacts") }}</router-link>
     <!-- |
     <select name="lang" v-model="lang">
@@ -43,7 +43,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica Light, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

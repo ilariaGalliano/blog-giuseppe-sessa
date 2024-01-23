@@ -10,11 +10,7 @@
         {{ translate("my") }} <br />
         {{ translate("story") }}
       </h2>
-      <img
-        src="../assets/exeter.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+      <img src="../assets/1.jpg" alt="concert-pic" class="img-concert-pic" />
     </div>
   </div>
 
@@ -26,11 +22,7 @@
       <!-- <p class="music_video fade-in subtitle">
         {{ translate("bioSecondPart") }}
       </p> -->
-      <img
-        src="../assets/2389landi-gio.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+      <img src="../assets/2.jpg" alt="concert-pic" class="img-concert-pic" />
     </div>
   </div>
 
@@ -42,11 +34,7 @@
       <!-- <p class="music_video fade-in subtitle">
         {{ translate("bioLastPart") }}
       </p> -->
-      <img
-        src="../assets/2390landi-gio.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+      <img src="../assets/3.jpg" alt="concert-pic" class="img-concert-pic" />
     </div>
   </div>
 
@@ -58,11 +46,7 @@
       <!-- <p class="music_video fade-in subtitle">
         {{ translate("bioLastPart") }}
       </p> -->
-      <img
-        src="../assets/7-2386landi-gio.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+      <img src="../assets/4.jpg" alt="concert-pic" class="img-concert-pic" />
     </div>
   </div>
 
@@ -74,11 +58,7 @@
       <!-- <p class="music_video fade-in subtitle">
         {{ translate("bioLastPart") }}
       </p> -->
-      <img
-        src="../assets/2326landi-gio.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+      <img src="../assets/5.jpg" alt="concert-pic" class="img-concert-pic" />
     </div>
   </div>
 </template>
@@ -95,7 +75,6 @@ li {
 /* General style */
 
 body {
-  font-family: "Intro", sans-serif;
   font-size: 16px;
   box-sizing: border-box;
   background: #000;

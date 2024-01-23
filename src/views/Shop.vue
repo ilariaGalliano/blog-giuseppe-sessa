@@ -6,17 +6,17 @@
       <h1 class="title">Official Store</h1>
       <!-- Jumbotron -->
         <div class="row d-flex justify-content-center" style="margin-bottom: 60px">
-          <div class="col-sm-1 	col-md-4 	col-lg-4 mobile-mb">
+          <div class="mobile-mb">
             <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="../assets/gs2.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">New Cd</h5>
+                <h5 class="card-title">Parker</h5>
                 <p class="card-text">Listen my new Album</p>
                 <a href="#" class="btn btn-info">Buy</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-1 	col-md-4 	col-lg-4 mobile-mb">
+          <div class="mobile-mb">
             <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="../assets/gs2.jpg" alt="Card image cap">
               <div class="card-body">
@@ -30,22 +30,22 @@
    
       <div>
         <div class="row d-flex justify-content-center" style="margin-bottom: 60px">
-          <div class="col-sm-1 	col-md-4 	col-lg-4 mobile-mb">
+          <div class="mobile-mb">
             <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../assets/live2.jpg" alt="Card image cap">
+            <img class="card-img-spartito" src="../assets/spartito1.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Spartito</h5>
-                <p class="card-text">Stand by Me Spartito</p>
+                <h5 class="card-text">Stand by Me</h5>
+                <p class="card-text">Download the sheet music</p>
                 <download-pdf-button :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" /> 
               </div>
             </div>
           </div>
-          <div class="col-sm-1 	col-md-4 	col-lg-4 mobile-mb">
+          <div class="mobile-mb">
             <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../assets/live2.jpg" alt="Card image cap">
+            <img class="card-img-spartito" src="../assets/spartito2.png" alt="Card image cap">
               <div class="card-body">
-                 <h5 class="card-title">Spartito</h5>
-                <p class="card-text">How I Met Your Mother Spartito</p>
+                <h5 class="card-text">How I Met Your Mother</h5>
+                <p class="card-text">Download the sheet music</p>
                 <download-pdf-button :pdf-url="pdfUrl2" :pdf-file-name="pdfFileName2" /> 
               </div>
             </div>
@@ -53,14 +53,14 @@
         </div>
       </div>
       <div class="row d-flex justify-content-center">
-      <div class="col-sm-1 	col-md-4 	col-lg-4">
+      <div>
         <h2 class="mt-4">Book your class:</h2>
         <!-- Modal -->
        <button type="button" class="btn btn-info mt-3" @click="openModal">Info</button>
        <div v-if="isModalOpen" class="card-info">
         <p>Follow the instructure:</p>
-        <ul>
-            <li>Send a mail to: <a href="mailto:giuseppesessa54@gmail.com">giuseppesessa54@gmail.com</a> </li>
+        <ul class="mb-2">
+            <li>Send a mail to: <a href="mailto:giuseppesessa54@gmail.com">giuseppesessa54@gmail.com</a> or go to the <a href="/contacts">Contact page</a> </li>
             <li>You'll be contact back in 24 hours</li>
             <li>Reserve your music class</li>
             <li>Enjoy it</li>
@@ -69,9 +69,6 @@
        </div>
       </div>
     </div>
-        <!-- <div class="mt-4 googleCalendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FRome&showTitle=1&showNav=1&showDate=1&showTz=1&src=aWxhcmlhLmdhbGxpYW5vN0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=aXQuaXRhbGlhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=NWh0MXY0N2lzMXVoYTBoaTdtanN1M29tZzY0djFpcWhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237986CB&color=%2333B679&color=%230B8043&color=%234285F4" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div> -->
     </div>
 </template>
 
@@ -88,10 +85,10 @@ export default {
   data() {
     return {
       isModalOpen: this.visible,
-      pdfUrl: "/files/spartito1.pdf",
-      pdfFileName: "spartito1.pdf",
-      pdfUrl2: "/files/spartito2.pdf",
-      pdfFileNam2: "spartito2.pdf",
+      pdfUrl: "/files/HIMYM.pdf",
+      pdfFileName: "HIMYM.pdf",
+      pdfUrl2: "/files/StandByMe.pdf",
+      pdfFileName2: "StandByMe.pdf",
     };
   },
   methods: {
@@ -132,7 +129,15 @@ export default {
   width: 100%;
 }
 
-.card-body:hover {
+.card-img-spartito {
+  filter: blur(6px);
+  height: 150px;
+}
+
+.card-img-spartito:hover {
+  filter: blur(0);
+}
+.card:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   transition: all 150ms ease-in-out;
   transform: scale(1);
@@ -149,6 +154,14 @@ export default {
   padding: 10px;
   margin-top: 20px;
   margin-left: 7px;
+}
+
+.mobile-mb {
+  margin: 15px;
+}
+
+li {
+  text-align: initial;
 }
 
 /* .googleCalendar {
@@ -178,7 +191,7 @@ export default {
     margin-top: 20px;
     margin-left: 7px;
   }
-  .card-body:hover {
+  .card:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
     transition: all 150ms ease-in-out;
     transform: scale(1);

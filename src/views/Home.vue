@@ -11,6 +11,35 @@
       </select>
     </div>
     <!-- Jumbotron -->
+    <div class="card" style="margin-bottom: 60px">
+      <iframe
+        height="400"
+        src="https://www.youtube.com/embed/P7K453_wXSk?si=wNEby52JncCU9zAG?autoplay=1&mute=1&loop=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="card mb-5">
+      <img class="card-img-top" src="../assets/NewAlbum.jpeg" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Parker</h5>
+        <p class="card-text">
+          {{ translate("album") }}
+        </p>
+      </div>
+    </div>
+    <div class="card mb-5">
+      <img class="card-img-top" src="../assets/song.jpeg" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Parker</h5>
+        <p class="card-text">
+          {{ translate("album") }}
+        </p>
+      </div>
+    </div>
     <div class="card mb-5">
       <img class="card-img-top" src="../assets/gs2.jpg" alt="Card image cap" />
       <div class="card-body">
@@ -18,13 +47,12 @@
         <p class="card-text">
           {{ translate("album") }}
         </p>
-        <p class="card-text">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </p>
       </div>
     </div>
-    <div class="card mt-3">
-      <!-- <div class="card-body">
+    <!-- <div class="card mt-3">
+    </div> -->
+
+    <!-- <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">
           This is a wider card with supporting text below as a natural lead-in
@@ -39,17 +67,16 @@
         src="../assets/gs2.jpg"
         alt="Card image cap"
       /> -->
-      <iframe
-        style="border-radius: 12px"
-        src="https://open.spotify.com/embed/artist/7ji3gKfLdWNIrV5i3jVZIW?utm_source=generator"
-        width="100%"
-        height="352"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-    </div>
+    <iframe
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/artist/7ji3gKfLdWNIrV5i3jVZIW?utm_source=generator"
+      width="100%"
+      height="352"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
   </div>
 </template>
 

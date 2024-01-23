@@ -3,13 +3,10 @@
   <footer>
     <h3 class="title-footer">Giuseppe Sessa</h3>
     <div>
-      <ul class="d-flex justify-content-center">
+      <ul class="d-flex justify-content-center" style="padding-left: 0">
         <li>
-          <a
-            href="https://it-it.facebook.com/GiuseppeSessaMusic/"
-            target="_blank"
-          >
-            <img src="../assets/facebook.png" alt="fb" width="30" height="30" />
+          <a href="https://www.youtube.com/@giuseppesessa8166" target="_blank">
+            <img src="../assets/ytube.png" alt="fb" width="44" height="30" />
           </a>
         </li>
         <li>
@@ -26,11 +23,6 @@
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/@giuseppesessa8166" target="_blank">
-            <img src="../assets/ytube.png" alt="fb" width="44" height="30" />
-          </a>
-        </li>
-        <li>
           <a
             href="https://open.spotify.com/artist/7ji3gKfLdWNIrV5i3jVZIW"
             target="_blank"
@@ -39,7 +31,7 @@
           </a>
         </li>
       </ul>
-      <p>© 2023 Giuseppe Sessa</p>
+      <p>© {{ currYear }} Giuseppe Sessa</p>
     </div>
   </footer>
 </template>
@@ -76,3 +68,13 @@ footer {
   z-index: 2;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      currYear: new Date().getFullYear(),
+    };
+  },
+};
+</script>

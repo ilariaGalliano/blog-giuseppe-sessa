@@ -1,47 +1,52 @@
 <template>
   <div class="panel">
     <div class="container">
-      <p class="music_video fade-in intro">Live</p>
+      <p class="music_video fade-in intro">Concert Dates</p>
       <h2 class="music_video fade-in title-big">
         Le nuove <br />
         date.
       </h2>
-      <img
-        src="../assets/exeter.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+      <img src="../assets/live.jpg" alt="concert-pic" class="img-concert-pic" />
     </div>
   </div>
 
-  <div class="panel">
+  <div class="panel mb-3">
     <div class="container">
-      <h2 class="music_video fade-in title-med mb-2">
+      <h2 class="music_video fade-in title-med">
         Gli eventi <br />
         disponibili
       </h2>
-      <p class="music_video fade-in subtitle">Napoli</p>
-      <p class="music_video fade-in subtitle">Roma</p>
-      <p class="music_video fade-in subtitle">Milano</p>
-      <img
-        src="../assets/2389landi-gio.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+      <p class="music_video fade-in subtitle">Napoli - 12 Maggio 2024 </p>
+      <p class="music_video fade-in subtitle">Roma - 2 Giugno 2024</p>
+      <p class="music_video fade-in subtitle">Milano - 20 Luglio 2024</p>
     </div>
   </div>
-
-  <div class="panel">
-    <div class="container">
-      <p class="music_video fade-in orange-text">Ti aspetto live</p>
-      <p class="music_video fade-in orange-text">
-        per uno show indimenticabile
-      </p>
-      <img
-        src="../assets/7-2386landi-gio.jpg"
-        alt="concert-pic"
-        class="img-concert-pic"
-      />
+ 
+  <div class="row d-flex justify-content-center">
+    <div>
+      <h2 class="mt-4">Buy your tickets:</h2>
+      <!-- Modal -->
+      <button type="button" class="btn btn-info mt-3" @click="openModal">
+        Info
+      </button>
+      <div v-if="isModalOpen" class="card-info">
+        <p class="mb-2">Follow the instructure:</p>
+        <ul>
+          <li>
+            Send a mail to:
+            <a href="mailto:giuseppesessa54@gmail.com"
+              >giuseppesessa54@gmail.com</a
+            >
+            or go to the <a href="/contacts">Contact page</a>
+          </li>
+          <li>You'll be contact back in 24 hours</li>
+          <li>Buy your ticket</li>
+          <li>Enjoy the concert</li>
+        </ul>
+        <button type="button" class="btn btn-info mt-3" @click="openModal">
+          Close
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -52,14 +57,13 @@
   margin: 0;
 }
 li {
-  list-style: none;
+  text-align: initial;
 }
 
 /*/
 /* General style */
 
 body {
-  font-family: "Intro", sans-serif;
   font-size: 16px;
   box-sizing: border-box;
   background: #000;
@@ -99,7 +103,6 @@ body {
 .panel {
   height: auto;
   width: 100%;
-  background-color: #f7f7f7;
   color: #000;
   position: relative;
   z-index: 2;
@@ -158,6 +161,43 @@ body {
   text-align: center;
   font-weight: bold;
 }
+
+.card-info {
+  width: 300px;
+  height: auto;
+  border: 2px solid grey;
+  border-radius: 40px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+h2 {
+    margin-bottom: 30px;
+  }
+  
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+  .mobile-mb {
+    margin-bottom: 15px;
+  }
+  .card-info {
+    width: 300px;
+    height: auto;
+    border: 2px solid grey;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 7px;
+  }
+}
 </style>
 
 <script>
@@ -165,6 +205,18 @@ export default {
   name: "Live",
   props: {
     msg: String,
+    visible: Boolean,
+  },
+  data() {
+    return {
+      isModalOpen: this.visible,
+    };
+  },
+  methods: {
+    openModal() {
+      this.isModalOpen = !this.isModalOpen;
+      console.log("test", this.isModalOpen);
+    },
   },
   mounted: function () {
     var element_to_watch = document.querySelectorAll(".music_video");
