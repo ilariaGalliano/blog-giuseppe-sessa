@@ -1,4 +1,5 @@
 import { createApp } from "vue";
+import "@fontsource/roboto/300.css";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";

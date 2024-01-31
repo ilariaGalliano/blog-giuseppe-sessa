@@ -3,7 +3,8 @@
   <div alt="image" class="home-img"></div>
   <div class="container">
     <!-- HomePage -->
-    <h1 class="title">Giuseppe Sessa</h1>
+    <!-- <h1 class="title">Giuseppe Sessa</h1> -->
+    <img class="title-name" src="../assets/logo-nome.png" alt="npme" />
     <div class="flags">
       <select name="lang" v-model="lang">
         <option value="en">🇬🇧</option>
@@ -14,8 +15,8 @@
     <div class="card" style="margin-bottom: 60px">
       <iframe
         height="400"
-        src="https://www.youtube.com/embed/P7K453_wXSk?si=wNEby52JncCU9zAG?autoplay=1&mute=1&loop=1"
-        title="YouTube video player"
+        src="https://www.youtube.com/embed/P7K453_wXSk?autoplay=1&mute=1&loop=1"
+        title="Giuseppe Sessa video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
@@ -23,7 +24,11 @@
     </div>
 
     <div class="card mb-5">
-      <img class="card-img-top" src="../assets/NewAlbum.jpeg" alt="Card image cap" />
+      <img
+        class="card-img-top"
+        src="../assets/NewAlbum.jpeg"
+        alt="Card image cap"
+      />
       <div class="card-body">
         <h5 class="card-title">Parker</h5>
         <p class="card-text">
@@ -32,7 +37,11 @@
       </div>
     </div>
     <div class="card mb-5">
-      <img class="card-img-top" src="../assets/song.jpeg" alt="Card image cap" />
+      <img
+        class="card-img-top"
+        src="../assets/song.jpeg"
+        alt="Card image cap"
+      />
       <div class="card-body">
         <h5 class="card-title">Parker</h5>
         <p class="card-text">
@@ -49,24 +58,6 @@
         </p>
       </div>
     </div>
-    <!-- <div class="card mt-3">
-    </div> -->
-
-    <!-- <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </p>
-        <p class="card-text">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </p>
-      </div>
-      <img
-        class="card-img-bottom"
-        src="../assets/gs2.jpg"
-        alt="Card image cap"
-      /> -->
     <iframe
       style="border-radius: 12px"
       src="https://open.spotify.com/embed/artist/7ji3gKfLdWNIrV5i3jVZIW?utm_source=generator"
@@ -111,14 +102,14 @@ export default {
 .title {
   margin-bottom: 55px;
   margin-top: 40px;
-  /* font-family: "Lucida Console", Monaco, monospace; */
 }
 
 .home-img {
   width: 100%;
-  height: 420px;
-  background-image: url("../assets/gs.jpg");
+  height: 530px;
+  background-image: url("../assets/homepage.jpg");
   background-size: cover;
+  background-position: center;
   text-align: center;
   position: relative;
   margin-bottom: 30px;
@@ -130,7 +121,7 @@ export default {
 
 .flags {
   position: absolute;
-  top: 65%;
+  top: 80%;
   right: 14%;
 }
 
@@ -140,8 +131,16 @@ export default {
   }
   .flags {
     position: absolute;
-    top: 68%;
+    top: 73%;
     right: 10px;
+  }
+
+  .title-name {
+    width: 100%;
+  }
+
+  .home-img {
+    height: 420px;
   }
 }
 </style>

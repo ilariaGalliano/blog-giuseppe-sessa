@@ -197,7 +197,13 @@ li {
     transform: scale(1);
     opacity: 1;
     cursor: pointer;
-    border-radius: 40px;
+  }
+  .card-img-spartito {
+    filter: blur(6px);
+  }
+
+  .card-img-spartito:hover {
+    filter: blur(0);
   }
 }
 </style>

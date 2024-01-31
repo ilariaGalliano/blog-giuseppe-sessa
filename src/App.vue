@@ -31,7 +31,11 @@ export default {
 </script>
 
 <style>
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
 #app {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 </style>
