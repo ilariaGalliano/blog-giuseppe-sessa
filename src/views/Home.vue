@@ -5,12 +5,12 @@
     <!-- HomePage -->
     <!-- <h1 class="title">Giuseppe Sessa</h1> -->
     <img class="title-name" src="../assets/logo-nome.png" alt="npme" />
-    <div class="flags">
+    <!-- <div class="flags">
       <select name="lang" v-model="lang">
         <option value="en">🇬🇧</option>
         <option value="it">🇮🇹</option>
       </select>
-    </div>
+    </div> -->
     <!-- Jumbotron -->
     <div class="card" style="margin-bottom: 60px">
       <iframe
@@ -31,9 +31,9 @@
       />
       <div class="card-body">
         <h5 class="card-title">Parker</h5>
-        <p class="card-text">
+        <!-- <p class="card-text">
           {{ translate("album") }}
-        </p>
+        </p> -->
       </div>
     </div>
     <div class="card mb-5">
@@ -43,19 +43,19 @@
         alt="Card image cap"
       />
       <div class="card-body">
-        <h5 class="card-title">Parker</h5>
-        <p class="card-text">
+        <h5 class="card-title">Anne & Rose</h5>
+        <!-- <p class="card-text">
           {{ translate("album") }}
-        </p>
+        </p> -->
       </div>
     </div>
     <div class="card mb-5">
       <img class="card-img-top" src="../assets/gs2.jpg" alt="Card image cap" />
       <div class="card-body">
-        <h5 class="card-title">Parker</h5>
-        <p class="card-text">
+        <h5 class="card-title">Orizzonte</h5>
+        <!-- <p class="card-text">
           {{ translate("album") }}
-        </p>
+        </p> -->
       </div>
     </div>
     <iframe
@@ -121,7 +121,7 @@ export default {
 
 .flags {
   position: absolute;
-  top: 80%;
+  top: 20%;
   right: 14%;
 }
 

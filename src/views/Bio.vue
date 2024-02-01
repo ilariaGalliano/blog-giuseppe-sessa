@@ -5,7 +5,6 @@
         <option value="en">🇬🇧</option>
         <option value="it">🇮🇹</option>
       </select>
-      <!-- <p class="music_video fade-in intro">Giuseppe</p> -->
       <h2 class="music_video fade-in title-big">
         {{ translate("my") }} <br />
         {{ translate("story") }}
@@ -64,6 +63,7 @@
 </template>
 
 <style scoped>
+/* General style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,25 +72,11 @@ li {
   list-style: none;
 }
 
-/* General style */
-
 body {
   font-size: 16px;
   box-sizing: border-box;
   background: #000;
 }
-
-/* Video  */
-/* .video-bg {
-  width: 100%;
-  max-height: 600px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  opacity: 0, 6;
-  z-index: 0;
-} */
 
 /* Sections styles  */
 .section {
@@ -186,6 +172,16 @@ body {
   color: #f56900;
   text-align: center;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+  .title-big {
+    font-size: 2.5rem;
+    margin-top: 6px;
+  }
+  .title-med {
+    font-size: 1rem;
+  }
 }
 </style>
 

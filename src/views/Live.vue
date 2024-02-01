@@ -1,10 +1,15 @@
 <template>
   <div class="panel">
     <div class="container">
-      <p class="music_video fade-in intro">Concert Dates</p>
+      <div class="flags mt-3">
+        <select name="lang" v-model="lang">
+          <option value="en">🇬🇧</option>
+          <option value="it">🇮🇹</option>
+        </select>
+      </div>
       <h2 class="music_video fade-in title-big">
-        Le nuove <br />
-        date.
+        {{ translate("concert") }} <br />
+        {{ translate("dates") }}
       </h2>
       <img src="../assets/live.jpg" alt="concert-pic" class="img-concert-pic" />
     </div>
@@ -13,38 +18,53 @@
   <div class="panel mb-3">
     <div class="container">
       <h2 class="music_video fade-in title-med">
-        Gli eventi <br />
-        disponibili
+        {{ translate("upcoming") }}<br />
+        {{ translate("events") }}
       </h2>
-      <p class="music_video fade-in subtitle">Napoli - 12 Maggio 2024 </p>
-      <p class="music_video fade-in subtitle">Roma - 2 Giugno 2024</p>
-      <p class="music_video fade-in subtitle">Milano - 20 Luglio 2024</p>
+      <p class="music_video fade-in subtitle">
+        Terni - Auditorium Gazzoli - 23 Febbraio - Opening Mike Dawes -
+        <a
+          href="https://www.vivaticket.com/it/ticket/mike-dawes-the-italian-tour/225180?culture=it-it"
+          target="_blank"
+          style="color: #aa8a85; font-weight: bold"
+          >{{ translate("buyHere") }}</a
+        >
+      </p>
+      <p class="music_video fade-in subtitle">
+        Roma - Let It Beer - 25 Febbraio - Opening Mike Dawes -
+        <a
+          href="ttps://www.ciaotickets.com/it/biglietti/mike-dawes-live-in-roma"
+          target="_blank"
+          style="color: #aa8a85; font-weight: bold"
+          >{{ translate("buyHere") }}</a
+        >
+      </p>
     </div>
   </div>
- 
+
   <div class="row d-flex justify-content-center">
     <div>
-      <h2 class="mt-4">Buy your tickets:</h2>
+      <h2 class="mt-4">{{ translate("buy") }}</h2>
       <!-- Modal -->
-      <button type="button" class="btn btn-info mt-3" @click="openModal">
+      <button type="button" class="btn btn-success" @click="openModal">
         Info
       </button>
       <div v-if="isModalOpen" class="card-info">
-        <p class="mb-2">Follow the instructure:</p>
-        <ul>
+        <p>{{ translate("instruction") }}</p>
+        <ul class="mb-2">
           <li>
-            Send a mail to:
+            {{ translate("mail") }}
             <a href="mailto:giuseppesessa54@gmail.com"
               >giuseppesessa54@gmail.com</a
             >
-            or go to the <a href="/contacts">Contact page</a>
+            {{ translate("visit") }} <a href="/contacts">Contact page</a>
           </li>
-          <li>You'll be contact back in 24 hours</li>
-          <li>Buy your ticket</li>
-          <li>Enjoy the concert</li>
+          <li>{{ translate("contact") }}</li>
+          <li>{{ translate("buyInfo") }}</li>
+          <li>{{ translate("enjoy") }}</li>
         </ul>
-        <button type="button" class="btn btn-info mt-3" @click="openModal">
-          Close
+        <button type="button" class="btn btn-success mt-3" @click="openModal">
+          {{ translate("close") }}
         </button>
       </div>
     </div>
@@ -173,9 +193,9 @@ body {
 }
 
 h2 {
-    margin-bottom: 30px;
-  }
-  
+  margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 480px) {
   .container {
     margin-bottom: 20px;
@@ -197,25 +217,42 @@ h2 {
     margin-top: 20px;
     margin-left: 7px;
   }
+  .title-big {
+    font-size: 3rem;
+    margin-top: 6px;
+  }
+  .title-med {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
 }
 </style>
 
 <script>
+import en from "../en.js";
+import it from "../it.js";
 export default {
   name: "Live",
   props: {
     msg: String,
     visible: Boolean,
   },
+  mixins: [en, it],
   data() {
     return {
       isModalOpen: this.visible,
+      lang: "en",
     };
   },
   methods: {
     openModal() {
       this.isModalOpen = !this.isModalOpen;
       console.log("test", this.isModalOpen);
+    },
+    translate(prop) {
+      return this[this.lang][prop];
     },
   },
   mounted: function () {

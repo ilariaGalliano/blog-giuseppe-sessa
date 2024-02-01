@@ -24,6 +24,22 @@ export default {
       type: String,
       required: true,
     },
+    pdfUrl3: {
+      type: String,
+      required: true,
+    },
+    pdfFileName3: {
+      type: String,
+      required: true,
+    },
+    pdfUrl4: {
+      type: String,
+      required: true,
+    },
+    pdfFileName4: {
+      type: String,
+      required: true,
+    },
   },
   methods: {
     downloadPdf() {

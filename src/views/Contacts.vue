@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <h1 class="mb-5">Contatti</h1>
+    <h1 class="mb-5">Contacts</h1>
     <div class="display-flex">
       <div class="mr text-left">
         <span>Info</span>
@@ -104,11 +104,6 @@ export default {
   }
 }
 
-/* 
-.jumbotron {
-  background: #f19998;
-} */
-
 h1 {
   font-weight: bold;
 }
@@ -124,7 +119,6 @@ li {
   padding: 8% 5% 0 4%;
 }
 
-/*TEST/ */
 .form-container {
   max-width: 400px;
   margin: 0 auto;

@@ -3,7 +3,18 @@ export default {
     return {
       it: {
         welcomeMsg: "Benvenuti",
-        album: "Ascolta il mio nuovo CD",
+        song: "Ascolta il mio brano",
+        album: "Ascolta il mio nuovo Album",
+        oldAlbum: "Ascolta il mio Album",
+        spartito: "Scarica lo spartito",
+        instruction: "Segui le istruzioni: ",
+        booking: "Prenota la tua lezione:",
+        mail: "Manda una mail a: ",
+        visit: "o visita la pagina: ",
+        contact: "Sarai ricontattato entro 24 ore",
+        reserve: "Prenota la tua lezione di musica",
+        enjoy: "Divertiti",
+        close: "Chiudi",
         mainPage: "Pagina principale",
         my: "La mia",
         story: "STORIA",
@@ -15,6 +26,14 @@ export default {
           "Dopo aver portato live, per alcuni anni, il suo spettacolo fingerstyle, e condiviso il palco e aperto concerti ad importanti chitarristi e musicisti quali: Jon Gomm, Peter Finger,Karlijn Langendijk, Pierangelo Mugavero, Finaz, Tommaso Primo, La Municipàl, decide di mettersi in gioco e confrontarsi con altri chitarristi europei, partecipando nel 2022 al Fingerstyle Collective Festival ad Exeter (UK), organizzato dalle importanti etichette CandyRat e Fretmonkey, dove raggiunge il 2° posto e l’anno successivo al Warsaw Fingerstyle Festival, dove ottiene un’ulteriore vittoria.",
         bioLastPart:
           "Attualmente si dedica allo studio della chitarra classica presso il Conservatorio G. Martucci di Salerno ed è al lavoro per il suo secondo disco che vedrà la luce nel 2024, anticipato però dall’uscita dei singoli “Parker” e “Anne & Rose”, prodotti insieme ad Antoine Doufur, in uscita sui canali della prestigiosa etichetta americana CandyRat Records.",
+        store: "Store Ufficiale",
+        concert: "Date",
+        dates: "Eventi",
+        events: "Eventi disponibili",
+        upcoming: "Prossimi",
+        buy: "Oppure: ",
+        buyHere: "Compra qui",
+        buyInfo: "Compra il biglietto"
       },
     };
   },

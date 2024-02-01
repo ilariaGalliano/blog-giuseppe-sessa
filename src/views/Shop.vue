@@ -1,79 +1,171 @@
-<!-- eslint-disable prettier/prettier -->
 <template>
- <div alt="image" class="home-img"></div>
+  <div alt="image" class="home-img"></div>
   <div class="container">
-      <!-- HomePage -->
-      <h1 class="title">Official Store</h1>
-      <!-- Jumbotron -->
-        <div class="row d-flex justify-content-center" style="margin-bottom: 60px">
-          <div class="mobile-mb">
-            <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../assets/gs2.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Parker</h5>
-                <p class="card-text">Listen my new Album</p>
-                <a href="#" class="btn btn-info">Buy</a>
-              </div>
-            </div>
+    <div class="flags">
+      <select name="lang" v-model="lang">
+        <option value="en">🇬🇧</option>
+        <option value="it">🇮🇹</option>
+      </select>
+    </div>
+    <!-- HomePage -->
+    <h1 class="title">{{ translate("store") }}</h1>
+    <!-- Jumbotron -->
+    <div class="row d-flex justify-content-center" style="margin-bottom: 60px">
+      <div class="mobile-mb">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            style="width: 285px; height: 150px"
+            src="../assets/comingsoon.jpeg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Parker (coming soon)</h5>
+            <p class="card-text">{{ translate("album") }}</p>
+            <a href="#" class="btn btn-info disabled">Buy</a>
           </div>
-          <div class="mobile-mb">
-            <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../assets/gs2.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Orizzonte</h5>
-                <p class="card-text">Listen to my music</p>
-                <a href="https://orizzonteshop.company.site/" class="btn btn-info" target="_blank">Buy</a>
-              </div>
+        </div>
+      </div>
+      <div class="mobile-mb">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="../assets/gs2.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Orizzonte</h5>
+            <p class="card-text">{{ translate("oldAlbum") }}</p>
+            <a
+              href="https://orizzonteshop.company.site/"
+              class="btn btn-info"
+              target="_blank"
+              >Buy</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div
+        class="row d-flex justify-content-center"
+        style="margin-bottom: 60px"
+      >
+        <div class="mobile-mb">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-spartito"
+              src="../assets/spartito1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-text">Stand by Me</h5>
+              <p class="card-text">{{ translate("spartito") }}</p>
+              <download-pdf-button
+                :pdf-url="pdfUrl"
+                :pdf-file-name="pdfFileName"
+              />
             </div>
           </div>
         </div>
-   
-      <div>
-        <div class="row d-flex justify-content-center" style="margin-bottom: 60px">
-          <div class="mobile-mb">
-            <div class="card" style="width: 18rem;">
-            <img class="card-img-spartito" src="../assets/spartito1.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-text">Stand by Me</h5>
-                <p class="card-text">Download the sheet music</p>
-                <download-pdf-button :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" /> 
-              </div>
-            </div>
-          </div>
-          <div class="mobile-mb">
-            <div class="card" style="width: 18rem;">
-            <img class="card-img-spartito" src="../assets/spartito2.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-text">How I Met Your Mother</h5>
-                <p class="card-text">Download the sheet music</p>
-                <download-pdf-button :pdf-url="pdfUrl2" :pdf-file-name="pdfFileName2" /> 
-              </div>
+        <div class="mobile-mb">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-spartito"
+              src="../assets/spartito2.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-text">How I Met Your Mother</h5>
+              <p class="card-text">{{ translate("spartito") }}</p>
+              <download-pdf-button
+                :pdf-url="pdfUrl2"
+                :pdf-file-name="pdfFileName2"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div class="row d-flex justify-content-center">
+    </div>
+    <div>
+      <div
+        class="row d-flex justify-content-center"
+        style="margin-bottom: 60px"
+      >
+        <div class="mobile-mb">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-spartito"
+              style="padding: 10px"
+              src="../assets/spartito3.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-text">Anne & Rose</h5>
+              <p class="card-text">{{ translate("spartito") }}</p>
+              <download-pdf-button
+                :pdf-url="pdfUrl3"
+                :pdf-file-name="pdfFileName3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mobile-mb">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-spartito"
+              style="padding: 10px"
+              src="../assets/spartito4.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-text">Parker</h5>
+              <p class="card-text">{{ translate("spartito") }}</p>
+              <download-pdf-button
+                :pdf-url="pdfUrl4"
+                :pdf-file-name="pdfFileName4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
       <div>
-        <h2 class="mt-4">Book your class:</h2>
+        <h2 class="mt-4">{{ translate("booking") }}</h2>
         <!-- Modal -->
-       <button type="button" class="btn btn-info mt-3" @click="openModal">Info</button>
-       <div v-if="isModalOpen" class="card-info">
-        <p>Follow the instructure:</p>
-        <ul class="mb-2">
-            <li>Send a mail to: <a href="mailto:giuseppesessa54@gmail.com">giuseppesessa54@gmail.com</a> or go to the <a href="/contacts">Contact page</a> </li>
-            <li>You'll be contact back in 24 hours</li>
-            <li>Reserve your music class</li>
-            <li>Enjoy it</li>
-        </ul>
-        <button type="button" class="btn btn-info mt-3" @click="openModal">Close</button>
-       </div>
+        <button type="button" class="btn btn-info mt-3" @click="openModal">
+          Info
+        </button>
+        <div v-if="isModalOpen" class="card-info">
+          <p>{{ translate("instruction") }}</p>
+          <ul class="mb-2">
+            <li>
+              {{ translate("mail") }}
+              <a href="mailto:giuseppesessa54@gmail.com"
+                >giuseppesessa54@gmail.com</a
+              >
+              {{ translate("visit") }} <a href="/contacts">Contact page</a>
+            </li>
+            <li>{{ translate("contact") }}</li>
+            <li>{{ translate("reserve") }}</li>
+            <li>{{ translate("enjoy") }}</li>
+          </ul>
+          <button type="button" class="btn btn-info mt-3" @click="openModal">
+            {{ translate("close") }}
+          </button>
+        </div>
       </div>
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
 import DownloadPdfButton from "@/components/DownloadPdfButton.vue";
+import en from "../en.js";
+import it from "../it.js";
 export default {
   name: "Shop",
   components: {
@@ -81,7 +173,9 @@ export default {
   },
   props: {
     visible: Boolean,
+    msg: String,
   },
+  mixins: [en, it],
   data() {
     return {
       isModalOpen: this.visible,
@@ -89,12 +183,20 @@ export default {
       pdfFileName: "HIMYM.pdf",
       pdfUrl2: "/files/StandByMe.pdf",
       pdfFileName2: "StandByMe.pdf",
+      pdfUrl3: "/files/Anne&Rose.pdf",
+      pdfFileName3: "Anne&Rose.pdf",
+      pdfUrl4: "/files/PARKER.pdf",
+      pdfFileName4: "PARKER.pdf",
+      lang: "en",
     };
   },
   methods: {
     openModal() {
       this.isModalOpen = !this.isModalOpen;
       console.log("test", this.isModalOpen);
+    },
+    translate(prop) {
+      return this[this.lang][prop];
     },
   },
 };
@@ -163,21 +265,12 @@ export default {
 li {
   text-align: initial;
 }
-
-/* .googleCalendar {
-  position: relative;
-  height: 0;
-  width: 50%;
-  padding-bottom: 50%;
+.flags {
+  position: absolute;
+  right: 29%;
+  top: 60%;
 }
 
-.googleCalendar iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 @media only screen and (max-width: 480px) {
   .mobile-mb {
     margin-bottom: 15px;
@@ -204,6 +297,11 @@ li {
 
   .card-img-spartito:hover {
     filter: blur(0);
+  }
+  .flags {
+    position: absolute;
+    top: 78%;
+    right: 10px;
   }
 }
 </style>
