@@ -104,11 +104,12 @@
             <div class="card-body">
               <h5 class="card-text">Anne & Rose</h5>
               <p class="card-text">{{ translate("spartito") }}</p>
-              <download-pdf-button
-                :pdf-url="pdfUrl3"
-                :pdf-file-name="pdfFileName3"
-                disabled
-              />
+              <a
+                href="https://orizzonteshop.company.site/ANNE-&-ROSE-TAB-p625095818"
+                class="btn btn-info"
+                target="_blank"
+                >Buy</a
+              >
             </div>
           </div>
         </div>
@@ -123,11 +124,12 @@
             <div class="card-body">
               <h5 class="card-text">Parker</h5>
               <p class="card-text">{{ translate("spartito") }}</p>
-              <download-pdf-button
-                :pdf-url="pdfUrl4"
-                :pdf-file-name="pdfFileName4"
-                disabled
-              />
+              <a
+                href="https://orizzonteshop.company.site/PARKER-TAB-p625092054"
+                class="btn btn-info"
+                target="_blank"
+                >Buy</a
+              >
             </div>
           </div>
         </div>

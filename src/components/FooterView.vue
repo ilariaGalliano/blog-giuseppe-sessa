@@ -6,7 +6,7 @@
       <ul class="d-flex justify-content-center" style="padding-left: 0">
         <li>
           <a
-            href="https://www.youtube.com/@giuseppesessamusic/videos"
+            href="https://www.youtube.com/channel/UCn23AEiyJScfZmDyu4Y64vQ"
             target="_blank"
           >
             <img src="../assets/ytube.png" alt="fb" width="44" height="30" />
