@@ -46,48 +46,6 @@
         </div>
       </div>
     </div>
-
-    <div>
-      <div
-        class="row d-flex justify-content-center"
-        style="margin-bottom: 60px"
-      >
-        <div class="mobile-mb">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-spartito"
-              src="../assets/spartito1.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-text">How I Met Your Mother</h5>
-              <p class="card-text">{{ translate("spartito") }}</p>
-              <download-pdf-button
-                :pdf-url="pdfUrl"
-                :pdf-file-name="pdfFileName"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="mobile-mb">
-          <div class="card" style="width: 18rem">
-            <img
-              class="card-img-spartito"
-              src="../assets/spartito2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-text">Stand by Me</h5>
-              <p class="card-text">{{ translate("spartito") }}</p>
-              <download-pdf-button
-                :pdf-url="pdfUrl2"
-                :pdf-file-name="pdfFileName2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div>
       <div
         class="row d-flex justify-content-center"
@@ -130,6 +88,47 @@
                 target="_blank"
                 >Buy</a
               >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="row d-flex justify-content-center"
+        style="margin-bottom: 60px"
+      >
+        <div class="mobile-mb">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-spartito"
+              src="../assets/spartito1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-text">How I Met Your Mother</h5>
+              <p class="card-text">{{ translate("spartito") }}</p>
+              <download-pdf-button
+                :pdf-url="pdfUrl"
+                :pdf-file-name="pdfFileName"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mobile-mb">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-spartito"
+              src="../assets/spartito2.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-text">Stand by Me</h5>
+              <p class="card-text">{{ translate("spartito") }}</p>
+              <download-pdf-button
+                :pdf-url="pdfUrl2"
+                :pdf-file-name="pdfFileName2"
+              />
             </div>
           </div>
         </div>
