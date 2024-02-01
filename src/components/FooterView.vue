@@ -5,15 +5,15 @@
     <div>
       <ul class="d-flex justify-content-center" style="padding-left: 0">
         <li>
-          <a href="https://www.youtube.com/@giuseppesessa8166" target="_blank">
+          <a
+            href="https://www.youtube.com/@giuseppesessamusic/videos"
+            target="_blank"
+          >
             <img src="../assets/ytube.png" alt="fb" width="44" height="30" />
           </a>
         </li>
         <li>
-          <a
-            href="https://it-it.facebook.com/GiuseppeSessaMusic/"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/giuseppesessa_/" target="_blank">
             <img
               src="../assets/instagram.png"
               alt="instagram"

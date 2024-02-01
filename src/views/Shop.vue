@@ -60,7 +60,7 @@
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-text">Stand by Me</h5>
+              <h5 class="card-text">How I Met Your Mother</h5>
               <p class="card-text">{{ translate("spartito") }}</p>
               <download-pdf-button
                 :pdf-url="pdfUrl"
@@ -77,7 +77,7 @@
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-text">How I Met Your Mother</h5>
+              <h5 class="card-text">Stand by Me</h5>
               <p class="card-text">{{ translate("spartito") }}</p>
               <download-pdf-button
                 :pdf-url="pdfUrl2"
@@ -107,6 +107,7 @@
               <download-pdf-button
                 :pdf-url="pdfUrl3"
                 :pdf-file-name="pdfFileName3"
+                disabled
               />
             </div>
           </div>
@@ -125,6 +126,7 @@
               <download-pdf-button
                 :pdf-url="pdfUrl4"
                 :pdf-file-name="pdfFileName4"
+                disabled
               />
             </div>
           </div>
