@@ -12,7 +12,7 @@
         </p>
         <p class="mb-mobile">
           <font-awesome-icon class="pr-3" icon="fa-phone" />
-          <span>+39 3545447898</span>
+          <span>+39 3455536871</span>
         </p>
       </div>
       <form
