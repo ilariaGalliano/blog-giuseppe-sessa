@@ -17,7 +17,7 @@
       </div>
       <form
         target="_blank"
-        action="https://formsubmit.co/ilaria.galliano7@gmail.com"
+        action="https://formsubmit.co/giuseppesessa54@gmail.com"
         method="POST"
       >
         <div class="form-group">
