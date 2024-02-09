@@ -15,7 +15,7 @@
     <div class="card" style="margin-bottom: 60px">
       <iframe
         height="400"
-        src="https://www.youtube.com/embed/P7K453_wXSk?autoplay=1&mute=1&loop=1"
+        src="https://www.youtube.com/embed/SWPlgUSVEL0?autoplay=1&mute=1&loop=1"
         title="Giuseppe Sessa video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
