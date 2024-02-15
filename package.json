@@ -6,8 +6,9 @@
     "serve": "vue-cli-service --openssl-legacy-provider serve",
     "build": "vue-cli-service --openssl-legacy-provider build",
     "lint": "vue-cli-service --openssl-legacy-provider lint"
-},
+  },
   "dependencies": {
+    "@babel/traverse": "^7.23.9",
     "@fontsource/roboto": "^5.0.8",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
@@ -16,7 +17,12 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
+    "browserify-sign": "^4.2.2",
     "core-js": "^3.6.5",
+    "ejs": "^3.1.7",
+    "json5": "^2.2.3",
+    "loader-utils": "^3.2.1",
+    "node-forge": "^1.3.1",
     "vue": "^3.2.47",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
