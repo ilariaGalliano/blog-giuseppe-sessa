@@ -40,6 +40,10 @@ export default {
       type: String,
       required: true,
     },
+    pdfFileName5: {
+      type: String,
+      required: true,
+    },
   },
   methods: {
     downloadPdf() {

@@ -132,6 +132,23 @@
             </div>
           </div>
         </div>
+        <div class="mobile-mb">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-spartito"
+              src="../assets/dragonball.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-text">Dragon Ball Medley</h5>
+              <p class="card-text">{{ translate("spartito") }}</p>
+              <download-pdf-button
+                :pdf-url="pdfUrl5"
+                :pdf-file-name="pdfFileName5"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -190,6 +207,8 @@ export default {
       pdfFileName3: "Anne&Rose.pdf",
       pdfUrl4: "/files/PARKER.pdf",
       pdfFileName4: "PARKER.pdf",
+      pdfUrl5: "/DRAGONBALLMEDLEY.pdf",
+      pdfFileName5: "DRAGONBALLMEDLEY.pdf",
       lang: "en",
     };
   },
