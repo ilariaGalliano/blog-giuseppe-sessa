@@ -207,7 +207,7 @@ export default {
       pdfFileName3: "Anne&Rose.pdf",
       pdfUrl4: "/files/PARKER.pdf",
       pdfFileName4: "PARKER.pdf",
-      pdfUrl5: "/DRAGONBALLMEDLEY.pdf",
+      pdfUrl5: "/files/DRAGONBALLMEDLEY.pdf",
       pdfFileName5: "DRAGONBALLMEDLEY.pdf",
       lang: "en",
     };
