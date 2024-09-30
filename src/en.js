@@ -13,7 +13,7 @@ export default {
         instruction: "Follow the instruction: ",
         booking: "Book your class:",
         mail: "Send a mail to: ",
-        visit: "or go to the ",
+        visit: "or go to the page:",
         contact: "You'll be contact back in 24 hours",
         reserve: "Reserve your music class",
         enjoy: "Enjoy it",

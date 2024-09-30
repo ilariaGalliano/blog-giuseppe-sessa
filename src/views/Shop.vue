@@ -167,7 +167,7 @@
               <a href="mailto:giuseppesessa54@gmail.com"
                 >giuseppesessa54@gmail.com</a
               >
-              {{ translate("visit") }} <a href="/contacts">Contact page</a>
+              {{ translate("visit") }} {{ translate("contacts") }}
             </li>
             <li>{{ translate("contact") }}</li>
             <li>{{ translate("reserve") }}</li>
