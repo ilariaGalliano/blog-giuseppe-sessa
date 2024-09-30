@@ -57,7 +57,7 @@
             <a href="mailto:giuseppesessa54@gmail.com"
               >giuseppesessa54@gmail.com</a
             >
-            {{ translate("visit") }} {{ translate("contacts") }}
+            {{ translate("visit") }} {{ translate("contacts") }} 
           </li>
           <li>{{ translate("contact") }}</li>
           <li>{{ translate("buyInfo") }}</li>
